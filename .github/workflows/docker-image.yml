@@ -19,9 +19,9 @@ jobs:
     - name: Build the Docker image
       run: docker build -t emp .
       -name: Tag the docker image
-      run: docker tag emp nanikreddy/node-hello-world
+      run: docker tag emp sameerdevops71814329/test:tagname
       -name: docker login 
       run: docker login -u ${{ secrets.DOCKER_USERNAME }} -P ${{ secrets.DOCKER-PASSWORD }}
       -name: docker push
-      run: docker push nanikreddy/node-hello-world
+      run: docker push sameerdevops71814329/test:tagname 
 
